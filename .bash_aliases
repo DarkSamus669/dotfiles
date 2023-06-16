@@ -7,7 +7,7 @@ alias q='exit'
 alias lf='ls -F'
 alias lt='ls --human-readable --size -1 -S --classify'
 alias grepc='grep --color'
-alias nano-view='nano -Rv'
+alias vnano='nano -Rv'
 
 
 alias gs='git status'
