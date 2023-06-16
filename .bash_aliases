@@ -10,9 +10,14 @@ alias grepc='grep --color'
 alias nano-view='nano -Rv'
 
 
-alias dots='git --git-dir=$HOME/Source/DarkSamus669/dots --work-tree=$HOME'
-alias dots-ls='dots ls-files'
-alias dots-ls-untracked='dots status -u .'
+alias gs='git status'
+alias ga='git add'
+alias gr='git rm'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gp='git push'
+alias gd='git diff'
+alias gl='git log'
 
 
 alias yt='yt-dlp -4'
