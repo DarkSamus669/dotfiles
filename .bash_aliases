@@ -1,9 +1,10 @@
 
 
 alias e='$EDITOR'
+alias q='exit'
 alias c='clear && echo'
 alias r='tput reset && echo && neofetch'
-alias q='exit'
+alias cr='tput reset && clear && echo'
 alias lf='ls -F'
 alias lt='ls --human-readable --size -1 -S --classify'
 alias grepc='grep --color'
