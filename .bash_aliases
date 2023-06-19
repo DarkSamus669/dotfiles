@@ -8,6 +8,7 @@ alias lf='ls -F'
 alias lt='ls --human-readable --size -1 -S --classify'
 alias grepc='grep --color'
 alias vnano='nano -Rv'
+alias im-comment='magick identify -quiet -format "%c"'
 
 
 alias gs='git status'
