@@ -1,7 +1,7 @@
 
 
 ### Move all the relevent files related to youtube video
-yt-clean() {
+yt-clean () {
     local move="mv -i"
     $move *.vtt .subtitles/
     $move *.png .thumbnails/
@@ -12,7 +12,7 @@ yt-clean() {
 
 
 ### Find files in curent directory and remove
-find-remove()
+find-remove ()
 {
 	find . -type f -name "$@" -exec rm -i {} \;
 }
@@ -20,7 +20,7 @@ find-remove()
 
 
 ### Read man pages with vim
-vman()
+vman ()
 {
     man $@ | vim -MR  -c ":set syntax=man" -
 }
@@ -28,9 +28,17 @@ vman()
 
 
 ### Convert bookmarks
-bookmark-convert() 
+bookmark-convert ()
 {
     sed '/^\s*$/d' "$@" | sed 'N;s/\n/|/'
+}
+
+
+
+### Restart applications
+restart () {
+    killall $@
+    setsid -f $@
 }
 
 
