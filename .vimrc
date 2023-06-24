@@ -2,6 +2,8 @@
 set path+=**		    " Searches current directory recursively.
 set wildmenu		    " Display all matches when tab complete.
 set incsearch           " Incremental search
+"set cursorline          " Highlight cursor line underneath the cursor horizontally
+"set cursorcolumn        " Highlight cursor line underneath the cursor vertically.
 set hidden              " Needed to keep multiple buffers open
 set nobackup            " No auto backups
 set noswapfile         	" No swap
